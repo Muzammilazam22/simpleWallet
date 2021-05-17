@@ -1,7 +1,9 @@
 pragma solidity ^0.8.4;
 //SPDX-License-Identifier: MIT
 
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+
+//import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol";
 
 contract SimpleWallet is Ownable {
     mapping(address => uint256) public allowance;
